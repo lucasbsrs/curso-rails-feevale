@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @usuario.nome %>
+</p>
+
+<%= link_to "Listar Tweets", lista_de_tweets_usuario_path(@usuario), :remote => true %>
+
+<div id="tweets-container">
+
+</div>
+
+<%= link_to 'Edit', edit_usuario_path(@usuario) %> |
+<%= link_to 'Back', usuarios_path %>
